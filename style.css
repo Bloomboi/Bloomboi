@@ -61,8 +61,8 @@ display: flex;
   
 }
  .nav-item {
-  /* animation:fadeInLeft;
-  animation-duration: 1s;  */
+  animation:fadeInLeft;
+  animation-duration: 1s; 
   padding-bottom: 10px;
   padding-right: 3vw;
 float: left;
@@ -139,14 +139,14 @@ padding: 20px;
 }
 
 
-/* .vertical-text { */
+ .vertical-text { 
   /* width:1px;             */
       /* TRY REMOVING THIS  */
   
   /* word-wrap: break-word; */
-  /* animation: fadeInDown; 
-  animation-duration: 1.3s;  */
-
+  animation: fadeInDown; 
+  animation-duration: 1.3s;  
+ }
 
 .big-text {
   line-height: 1em;
