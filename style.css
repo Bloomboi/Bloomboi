@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
 
 html{
     -webkit-text-size-adjust: 100%;
@@ -8,28 +8,19 @@ html{
 body{
     background-color: #fbfdef;
     margin: 0px;
+    
 }
-@media screen and (min-width: 0) and (max-width: 2119px) and (orientation: landscape) {
+
 .wrapper {
-    /* margin-right: 1;
-    margin-left: 1;  */
-    display: flex;
-    flex-direction: column;
-    /* min-height: 100vh;
-    padding-top: 10px;
-    padding-right: 30px; 
-    padding-left: 10px;  */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    line-height: 1.8em;
-    letter-spacing: .01em;
-    text-transform: none;
-    line-height: 2.3em;
-    font-size: 1rem;
-    line-height: 2.3;
+    
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
     -webkit-font-smoothing: antialiased;
+    
     } 
+div{
+  display: block;
 }
 a {
     cursor: pointer;
@@ -43,36 +34,22 @@ header {
     
 }
  .header-wrapper {
-    position: relative;
+  
     line-height: 1;
-    z-index: 2;
-    width: 100%;
-    box-sizing: border-box;
+    z-index: 1;
+
     padding-top: 0.1vw;
     padding-bottom: 0.2vw;
-    padding-left: 3vw;
-    padding-right: 3vw;
+ 
     pointer-events: auto;
-    text-align: left; 
-    top:10;
-    /* display: flex;
-    flex-wrap: nowrap;
-    flex: 1 0 67%; */
+    padding-bottom: 1.5vh;
     
-   
-    height: inherit;
 } 
 
 .nav {
   max-height: 1em;
-    /* display: inline-flex;
-     flex-wrap: wrap;
-    width: 34%;
-    max-height: 
-    flex: 1 1 34%;
-    pointer-events: auto;  */
-
-  direction: ltr
+  position: absolute;
+display: flex;
 
 }
 
@@ -81,59 +58,29 @@ header {
   font-weight: bold;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   
+  
 }
  .nav-item {
+  animation:fadeInLeft;
+  animation-duration: 1s; 
   padding-bottom: 10px;
+  padding-right: 3vw;
+float: left;
+ }
+@media screen and (max-width: 692px) {
+  .nav-item{
+    visibility: hidden;
+  }
+  
 } 
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  
-  direction: ltr; 
-  vertical-align: baseline;
-}
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 20%;
-  max-width: 100%;
-  padding: 30px;
-  align-content:center;
-    
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-  object-position: 100% 100%;
-  object-fit: cover;
-  white-space: nowrap;
-  
-  
 
-}
-img {
-  padding:5px;
-}
+  .Menu{
+  /* visibility: hidden; */
+ 
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 750px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-.Menu{
-  visibility: hidden;
-  
-}
-.Menu:hover {
+}  
+/* .Menu:hover {
   visibility:visible;
 }
 
@@ -141,9 +88,91 @@ img {
   pointer-events: auto;
   visibility:visible;
   
-}
+}  */
 
 .textbox {
 font-family: 'Roobert', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 padding: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+/* Create four equal columns that sits next to each other */
+.section {
+  flex:16%;
+  padding:1px;
+  position: relative;
+}
+.section img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  /* object-position: 100% 100%; */
+  vertical-align: middle;
+}
+@media screen and (max-width: 1050px) {
+  .section {
+    flex: 33%;
+    max-width: 33%;
+    
+    padding-bottom: 3vh;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .section img{
+  padding-bottom: 3vh;
+   height:35vh;
+  }
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 658px) {
+  .section{
+    flex:100%;
+    max-width: 100%;
+    height: 30%;
+  }
+}
+@media screen and (max-width: 658px) {
+  .section img{
+  padding-bottom: 3;
+    height: 15vh;
+  }
+}
+
+
+.vertical-text {
+  /* width:1px;             */
+      /* TRY REMOVING THIS  */
+  
+  /* word-wrap: break-word; */
+  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1.3s; /* don't forget to set a duration! */
+
+}
+.big-text {
+  line-height: 1em;
+  font-weight: bold;
+  font-family: 'Fira Sans', sans-serif;
+  
+}
+.sub-text {
+ /* padding-top: 10px; */
+  line-height: 1em;
+  font-weight: bold;
+    font-family: 'IBM plex mono';
+    color: #535353;
+}
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column2 {
+  flex: 20%;
+  flex:16%;
+  padding:1px;
+  position: relative;
+  /* padding:10px; */
 }
