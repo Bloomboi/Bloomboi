@@ -61,8 +61,8 @@ display: flex;
   
 }
  .nav-item {
-  animation:fadeInLeft;
-  animation-duration: 1s; 
+  /* animation:fadeInLeft;
+  animation-duration: 1s;  */
   padding-bottom: 10px;
   padding-right: 3vw;
 float: left;
@@ -75,11 +75,7 @@ float: left;
 } 
 
 
-  .Menu{
-  /* visibility: hidden; */
- 
 
-}  
 /* .Menu:hover {
   visibility:visible;
 }
@@ -143,15 +139,15 @@ padding: 20px;
 }
 
 
-.vertical-text {
+/* .vertical-text { */
   /* width:1px;             */
       /* TRY REMOVING THIS  */
   
   /* word-wrap: break-word; */
-  animation: fadeInDown; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1.3s; /* don't forget to set a duration! */
+  /* animation: fadeInDown; 
+  animation-duration: 1.3s;  */
 
-}
+
 .big-text {
   line-height: 1em;
   font-weight: bold;
