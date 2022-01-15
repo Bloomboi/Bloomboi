@@ -11,6 +11,7 @@ body{
     
 }
 
+
 .wrapper {
     
     padding-left: 1vw;
@@ -31,10 +32,12 @@ a {
 header {
     font-family: 'IBM Plex Mono', monospace;
     -webkit-font-smoothing: antialiased;
+  
     
 }
  .header-wrapper {
   
+   
     line-height: 1;
     z-index: 1;
 
@@ -43,7 +46,6 @@ header {
  
     pointer-events: auto;
     padding-bottom: 1.5vh;
-    
 } 
 
 .nav {
@@ -144,14 +146,16 @@ padding: 20px;
       /* TRY REMOVING THIS  */
   
   /* word-wrap: break-word; */
-  animation: fadeInDown; 
-  animation-duration: 1.3s;  
+  
  }
 
 .big-text {
   line-height: 1em;
   font-weight: bold;
   font-family: 'Fira Sans', sans-serif;
+  animation: fadeInDown; 
+  animation-duration: 1.3s; 
+  
   
 }
 .sub-text {
@@ -159,8 +163,18 @@ padding: 20px;
   line-height: 1em;
   font-weight: bold;
     font-family: 'IBM plex mono';
+   
+    animation: fadeInDown; 
+  animation-duration: 1.3s; 
     color: #535353;
+  
+    
 }
+
+
+
+
+
 .row2 {
   display: flex;
   flex-wrap: wrap;
