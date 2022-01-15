@@ -31,10 +31,18 @@ function displayHide() {
 
  }
 
+ function moveDown() {
+   document.getElementById("sub-menu").style.paddingTop = "90px";
+ }
+
+ function moveUp() {
+  document.getElementById("sub-menu").style.paddingTop = "0px";
+}
+
 
 ScrollTrigger.create({
    
-    toggleClass: {className: "scrolled", targets: 'header' },
+    toggleClass: {className: "scrolled", targets: '.header-trigger' },
     
     start: 'top+=100',
     
@@ -54,6 +62,8 @@ ScrollTrigger.create({
     end: "max+10" ,
     
     onEnter: self => setTimeout(displayHide, 500),
+   
+    
 
 
   });
@@ -68,15 +78,15 @@ ScrollTrigger.create({
     end: "top+=200",
    
     
-    onLeaveBack: self => setTimeout(displayShow,500)
-
+    onLeaveBack: self => setTimeout(displayShow,500),
+   
   });
     
       
   ScrollTrigger.create({
    
     start: -10,
-    toggleClass: {className: "fadein", targets: 'header' },
+    toggleClass: {className: "fadein", targets: '.header-trigger' },
    
   
     end: "top+=200",
@@ -89,3 +99,17 @@ ScrollTrigger.create({
   
    
     
+  ScrollTrigger.create({
+   
+    
+    
+    start: 'top+=100',
+    
+    end: "max" ,
+  
+
+    onEnter: self => setTimeout(moveDown, 400),
+    onLeaveBack: self => setTimeout(moveUp, 500),
+
+
+  });
