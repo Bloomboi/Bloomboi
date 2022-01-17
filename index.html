@@ -19,7 +19,7 @@
             <header>
                 <div class="header-wrapper"> 
                     <div class="header-flex1">
-                        <video id="myVideo" >
+                        <video id="myVideo" muted >
 
                         </video>
                           <a class="main-title" href="/index.html"><h1>PASTEL BLOOM</h1></a>
@@ -38,7 +38,7 @@
                         <div class="nav-item"><a href="/animation.html">ANIMATION</a></div>
                         <div class="nav-item"><a href="/Music.html">MUSIC</a></div>
                         <div class="nav-item"><a href="/Blender.html">BLENDER</a></div>
-                        <div class="nav-item"><a href="/video.html">ABOUT</a></div>
+                        <div class="nav-item"><a href="/About.html">ABOUT</a></div>
                     </div>
                 </nav>
             </header>
@@ -118,14 +118,16 @@
             <iframe src="test.html" ></iframe> -->
             <script src="script.js"></script> 
             <script type="text/javascript">
-              window.onload = function(e) {
+            //   window.onload = function(e) {
               
               var videoSource = new Array();
-                videoSource[0] = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm';
-                videoSource[1] = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm';
+                videoSource[0] = '/PBimages/animation/leaffall.mp4';
+                videoSource[1] = '/PBimages/animation/Cubes.mp4';
                 
                 var i = 0; // define i
                 var videoCount = videoSource.length;
+
+                document.getElementById("myVideo").setAttribute("src",videoSource[0]);
                 
                 function videoPlay(videoNum) {
                     document.getElementById("myVideo").setAttribute("src", videoSource[videoNum]);
@@ -144,7 +146,7 @@
                         videoPlay(i);
                     }
                 }
-            }
+            // }
                     </script>
         </div>
     </body>
