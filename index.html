@@ -19,9 +19,8 @@
             <header>
                 <div class="header-wrapper"> 
                     <div class="header-flex1">
-                        <video id="myVideo" autoplay muted loop preload poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/oceanshot.jpg">
-                            <source src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm" />
-                            <source src="/PBimages/animation/leaffall.mp4" />
+                        <video id="myVideo" >
+
                         </video>
                           <a class="main-title" href="/index.html"><h1>PASTEL BLOOM</h1></a>
                     </div>
@@ -118,6 +117,31 @@
 <!--          
             <iframe src="test.html" ></iframe> -->
             <script src="script.js"></script> 
+            <script type="text/javascript">
+                var videoSource = new Array();
+                videoSource[0] = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm';
+                videoSource[1] = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ocean-small.webm';
+                var i = 0; // define i
+                var videoCount = videoSource.length;
+                
+                function videoPlay(videoNum) {
+                    document.getElementById("myVideo").setAttribute("src", videoSource[videoNum]);
+                    document.getElementById("myVideo").load();
+                    document.getElementById("myVideo").play();
+                }
+                document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+                videoPlay(0); // play the video
+                
+                function myHandler() {
+                    i++;
+                    if (i == (videoCount - 1)) {
+                        i = 0;
+                        videoPlay(i);
+                    } else {
+                        videoPlay(i);
+                    }
+                }
+                    </script>
         </div>
     </body>
 </html>
