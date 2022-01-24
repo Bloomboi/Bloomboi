@@ -1,13 +1,7 @@
 
-/*
-design by Voicu Apostol.
-design: https://dribbble.com/shots/3533847-Mini-Music-Player
-I can't find any open music api or mp3 api so i have to download all musics as mp3 file.
-You can fork on github: https://github.com/muhammederdem/mini-player
-*/
 
 new Vue({
-    el: "#app",
+    el: "#mapp",
     data() {
       return {
         audio: null,
@@ -38,6 +32,62 @@ new Vue({
             artist: "PASTEL BLOOM",
             cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
             source: "/PBimages/3. INHALE A GIRL.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: false
+          },
+          {
+            name: "VALHALLA'S SUSHI CHAMPION",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "PBimages/4. VALHALLA'S SUSHI CHAMPION.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: false
+          },
+          {
+            name: "AN ABRIDGED STORY FOR FLOATING BALLOONS",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "/PBimages/5. AN ABRIDGED STORY FOR FLOATING BALLOONS.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: true
+          },
+          {
+            name: "THE MISSING DONUT TURTLE",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "/PBimages/6. THE MISSING DONUT TURTLE 2.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: false
+          },
+          {
+            name: "RAPHAEL'S INFINITE COOKIE",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "PBimages/7. RAPHAEL'S INFINITE COOKIE.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: false
+          },
+          {
+            name: "GALAPAGOS SWITCH MONKS",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "PBimages/8. GALAPAGOS SWITCH MONKS .mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: true
+          },
+          {
+            name: "THE SMOL LEAF SAGA",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "PBimages/9. THE SMOL LEAF SAGA.mp3",
+            url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
+            favorited: false
+          },
+          {
+            name: "FEATURE BOY",
+            artist: "PASTEL BLOOM",
+            cover: "https://f4.bcbits.com/img/a1388550428_16.jpg",
+            source: "PBimages/10. FEATURE BOY 2.mp3",
             url: "https://open.spotify.com/album/1f5jXdadznwrMeRYiHpZU1?si=cizNOb67SEyw9E-U4wrOEQ",
             favorited: false
           },
@@ -168,5 +218,9 @@ new Vue({
         link.as = "image"
         document.head.appendChild(link)
       }
-    }
+    },
+    
+    
   });
+
+

@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <title>PB///.MUSIC</title>
+  <title>PB//MUSIC</title>
  
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link rel="stylesheet" href="./lightboxstyle.css">
   <link rel="icon" type="image/x-icon" href="/PBimages/favi.png">
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Bloomboi/Bloomboi/main/PBimages/favicon.ico">
-
+  <link rel='stylesheet' href='https://www.dropbox.com/s/xt9wabju28h28yu/bluunext-bolditalic-webfont.woff?dl=0'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./gallerystylemusic.css">
+  <link rel="stylesheet" href="./musicvisualizer.css">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> 
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="wrapper">
+ <div class="wrapper">
   <a href="index.html" ><img src="PBimages/favi.png" id="rect" class="rectangle"></img></a>
   <header>
     
     <div id="hide" class="header-wrapper header-trigger"> 
       
-        <!-- TITLE-->
+       
         <div>
             <a class="main-title" href="/index.html">PASTEL BLOOM</a>
         </div>
@@ -30,7 +32,7 @@
         <nav class="nav">
             
             <div class="Menu">
-                <!-- <div class="nav-title nav-item"><a href="/Illustration.html">ART</a></div> -->
+                
                 <div class="nav-item"><a href="/Illustration.html">ILLUSTRATIONS</a></div>
                         <div class="nav-item"><a href="/GraphicDesign.html">GRAPHIC DESIGN</a></div>
                         <div class="nav-item"><a href="/animation.html">ANIMATION</a></div>
@@ -45,26 +47,18 @@
         </div>
     </div>
     
-    <div id="sub-menu" >
+    <!-- <div id="sub-menu" >
       <a href="Music.html#anchormusic" ><div id="hr1" ></div></a>
-      <!-- <a href="GraphicDesign.html#anchorbrand" ><div id="hr2" ></div></a>
-      <a href="GraphicDesign.html#anchorBc" ><div id="hr3" ></div></a> -->
-    </div>
     
+    </div>
+     -->
 </header>
 
 
-<!-- 
-<section style="display:none;" class="container">
-
-  <div class="spotify-embeds">
-  <div class="spotify-embed"><iframe src="https://open.spotify.com/embed/album/1f5jXdadznwrMeRYiHpZU1?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>
-
-</div></section>
-     -->
-
-
-     <div class="Mwrapper" id="app">
+  
+</div>
+ 
+     <div class="Mwrapper" id="mapp">
       <div class="player">
         <div class="player__top">
           <div class="player-cover">
@@ -118,7 +112,6 @@
       </div>
     
     </div>
-
     <svg xmlns="http://www.w3.org/2000/svg" hidden xmlns:xlink="http://www.w3.org/1999/xlink">
       <defs>
         <symbol id="icon-heart-o" viewBox="0 0 32 32">
@@ -168,14 +161,23 @@
           <path d="M2.304 5.248c-1.248 0-2.304 1.024-2.304 2.304v16.928c0 1.248 1.024 2.304 2.304 2.304s2.304-1.024 2.304-2.304v-16.928c-0.064-1.28-1.056-2.304-2.304-2.304z"></path>
         </symbol>
       </defs>
-    </svg>
+    </svg> 
    
-</div>
+    
+   
+   
+</div> 
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 <script src="/scroll.js"></script>
-<script src="/spotifyscript.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js'></script>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script> 
+<script src="script.js"></script>
+<!-- <script  src="./MVscript.js"></script> -->
 </body>
 </html>

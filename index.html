@@ -19,8 +19,10 @@
             <header>
                 <div class="header-wrapper"> 
                     <div class="header-flex1">
-                        <video id="myVideo" muted >
-
+                        <video autoplay playsinline loop id="videoPlayer" muted >
+                            <!-- <source src="PBimages/animation/video1.mp4" id="mp4Source" type="video/mp4">
+                            <source src="PBimages/animation/video2.mp4" id="mp4Source" type="video/mp4">
+                            <source src="PBimages/animation/video3.mp4" id="mp4Source" type="video/mp4"> -->
                         </video>
                           <a class="main-title" href="/index.html"><h1>PASTEL BLOOM</h1></a>
                     </div>
@@ -60,7 +62,7 @@
                         </div>   
                     </div> 
                     <div class="section">
-                        <a href="Illustration.html"><img src="/PBimages/main/girl 2 low res.jpg"></a>
+                        <a href="GraphicDesign.html"><img src="/PBimages/main/girl 2 low res.jpg"></a>
                          <div class="row2">  
                             <div class="column2">  <a href="/GraphicDesign.html"><p class="vertical-text big-text"> GRAPHIC DESIGN</p></a>                              
                             </div> 
@@ -74,7 +76,7 @@
                         </div>   
                     </div> 
                     <div class="section">
-                        <a href="Illustration.html"><img src="/PBimages/main/girl 3 low res.jpg"></a>
+                        <a href="animation.html"><img src="/PBimages/main/girl 3 low res.jpg"></a>
                          <div class="row2">  
                             <div class="column2">  <a href="animation.html"><p class="vertical-text big-text"> ANIMATION</p></a>                              
                             </div> 
@@ -83,7 +85,7 @@
                         </div>   
                     </div> 
                     <div class="section">
-                        <a href="Illustration.html"><img src="/PBimages/main/girl4 low res.jpg"></a>
+                        <a href="Music.html"><img src="/PBimages/main/girl4 low res.jpg"></a>
                          <div class="row2">  
                             <div class="column2">  <a href="Music.html"><p class="vertical-text big-text"> MUSIC</p></a>                              
                             </div> 
@@ -92,7 +94,7 @@
                         </div>   
                     </div> 
                     <div class="section">
-                        <a href="Illustration.html"><img src="/PBimages/main/girl 5 low res.jpg"></a>
+                        <a href="Blender.html"><img src="/PBimages/main/girl 5 low res.jpg"></a>
                          <div class="row2">  
                             <div class="column2">  <a href="Blender.html"><p class="vertical-text big-text"> BLENDER</p></a>                              
                             </div> 
@@ -102,7 +104,7 @@
                         </div>   
                     </div> 
                     <div class="section">
-                        <a href="Illustration.html"><img  src="/PBimages/main/girl6 low res.jpg"></a>
+                        <a href="About.html"><img  src="/PBimages/main/girl6 low res.jpg"></a>
                          <div class="row2">  
                             <div class="column2">  <a href="About.html"><p class="vertical-text big-text"> ABOUT</p></a>                              
                             </div> 
@@ -117,36 +119,57 @@
 <!--          
             <iframe src="test.html" ></iframe> -->
             <script src="script.js"></script> 
-            <script type="text/javascript">
-            //   window.onload = function(e) {
-              
-              var videoSource = new Array();
-                videoSource[0] = '/PBimages/animation/leaffall.mp4';
-                videoSource[1] = '/PBimages/animation/Cubes.mp4';
-                
-                var i = 0; // define i
-                var videoCount = videoSource.length;
-
-                document.getElementById("myVideo").setAttribute("src",videoSource[0]);
-                
-                function videoPlay(videoNum) {
-                    document.getElementById("myVideo").setAttribute("src", videoSource[videoNum]);
-                    document.getElementById("myVideo").load();
-                    document.getElementById("myVideo").play();
-                }
-                document.getElementById('myVideo').addEventListener('ended', myHandler, false);
-                videoPlay(0); // play the video
-                
-                function myHandler() {
-                    i++;
-                    if (i == (videoCount - 1)) {
-                        i = 0;
-                        videoPlay(i);
-                    } else {
-                        videoPlay(i);
-                    }
-                }
-            // }
+            <script >
+ let videoSource = new Array();
+videoSource[0] = '/PBimages/animation/video1.mp4';
+videoSource[1] = '/PBimages/animation/video1.mp4';
+let i = 0; // global
+const videoCount = videoSource.length;
+const element = document.getElementById("videoPlayer");
+ 
+function videoPlay(videoNum) {
+    element.setAttribute("src", videoSource[videoNum]);
+    element.autoplay = true;
+    element.load();
+    element.setAttribute("src", videoSource[videoNum]);
+    element.autoplay = true;
+    element.load();
+    element.setAttribute("src", videoSource[videoNum]);
+    element.autoplay = true;
+    element.load();
+}
+document.getElementById('videoPlayer').addEventListener('ended', myHandler, false);
+ 
+videoPlay(0); // load the first video
+ensureVideoPlays(); // play the video automatically
+ 
+function myHandler() {
+    i++;
+    if (i == videoCount) {
+        i = 0;
+        videoPlay(0);
+        
+    } else {
+        videoPlay(i);
+    }
+}
+ 
+function ensureVideoPlays() {
+    const video = document.getElementById('videoPlayer');
+ 
+    if(!video) return;
+    
+    const promise = video.play();
+    if(promise !== undefined){
+        promise.then(() => {
+            // Autoplay started
+        }).catch(error => {
+            // Autoplay was prevented.
+            video.muted = true;
+            video.play();
+        });
+    }
+}
                     </script>
         </div>
     </body>

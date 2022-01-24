@@ -10,41 +10,6 @@
   
 }
 
-.spotify-embeds {
-   width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-   
-  }
-  iframe {
-    width: inherit; 
-      float:left;
-  }
-  
-  .spotify-embed {
-    background: #282828;
-    /* position: absolute; */
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    left:0;
-  
-  }
-  .spotify-embed:not(:last-of-type) {
-    margin-bottom: 5px;
-  }
-  .spotify-embed iframe {
-    display: block;
-    position: absolute;
-    transition: opacity 0.125s;
-  }
-  .js .spotify-embed iframe {
-    opacity: 0;
-  }
-  .js .spotify-embed iframe.loaded {
-    opacity: 1;
-  }
 
 html{
   -webkit-text-size-adjust: 100%;
@@ -54,7 +19,7 @@ body{
   background-color: #fbfdef;
   margin: 0px;
   z-index: -10;
-
+ overflow: hidden;
   
 }
 
@@ -209,9 +174,6 @@ header {
 }
 
 
-body {
-  text-rendering: optimizeLegibility;
-}
 
 
 
@@ -226,9 +188,7 @@ body {
   font-family: IBM PLEX MONO;
 }
 
-* {
-  box-sizing: border-box;
-}
+
 
 .icon {
   display: inline-block;
@@ -240,12 +200,14 @@ body {
 }
 
 .Mwrapper {
+  
+  position: relative;
   width: 100%;
   display: flex;
   
   justify-content: center;
-  min-height: 1vh;
-  background-size: cover;
+
+
 }
 @media screen and (max-width: 700px), (max-height: 500px) {
   .wrapper {
