@@ -206,6 +206,8 @@ body {
   display: flex;
   
   justify-content: center;
+  animation: fadeInUp; 
+  animation-duration: 1.3s; 
 
 
 }

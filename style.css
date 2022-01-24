@@ -8,7 +8,7 @@ html{
 body{
     background-color: #fcffee;
     margin: 0px;
-
+    
 
 }
 .wrapper {
@@ -150,7 +150,6 @@ a {
   font-size: 72px;
   font-weight: bold;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
   
 }
  .nav-item {

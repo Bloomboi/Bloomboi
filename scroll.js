@@ -58,7 +58,7 @@ ScrollTrigger.create({
     
     toggleClass: {className: "fadein", targets: '.rectangle' },
     start: 'top+=100',
-    
+    markers:true,
     end: "max+10" ,
     
     onEnter: self => setTimeout(displayHide, 500),

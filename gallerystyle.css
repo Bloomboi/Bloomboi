@@ -239,6 +239,8 @@ img {
 
 .gallery {
   padding: 0 0 4rem 0;
+  animation: fadeInUp; 
+  animation-duration: 1.3s; 
 }
 .title {
   color: #2e2e2e;

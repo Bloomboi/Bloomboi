@@ -19,7 +19,7 @@
             <header>
                 <div class="header-wrapper"> 
                     <div class="header-flex1">
-                        <video autoplay playsinline loop id="videoPlayer" muted >
+                        <video autoplay id="videoPlayer" muted >
                             <!-- <source src="PBimages/animation/video1.mp4" id="mp4Source" type="video/mp4">
                             <source src="PBimages/animation/video2.mp4" id="mp4Source" type="video/mp4">
                             <source src="PBimages/animation/video3.mp4" id="mp4Source" type="video/mp4"> -->
@@ -133,11 +133,7 @@ function videoPlay(videoNum) {
     element.autoplay = true;
     element.load();
 }
-document.getElementById('videoPlayer').addEventListener('ended', myHandler, false);
- 
-videoPlay(0); // load the first video
-ensureVideoPlays(); // play the video automatically
- 
+
 function myHandler() {
     i++;
     if (i == videoCount) {
@@ -148,6 +144,14 @@ function myHandler() {
         videoPlay(i);
     }
 }
+
+document.getElementById('videoPlayer').addEventListener('ended', myHandler, false);
+ 
+videoPlay(0); // load the first video
+ensureVideoPlays(); // play the video automatically
+ 
+
+
  
 function ensureVideoPlays() {
     const video = document.getElementById('videoPlayer');
