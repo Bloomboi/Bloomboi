@@ -131,7 +131,7 @@ h1 {
     background: var(--mainBg);
     margin: 0px;
    
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   h1 {
