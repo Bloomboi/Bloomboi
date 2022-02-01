@@ -5,13 +5,7 @@ html{
     -webkit-text-size-adjust: 100%;
 }
 
-body{
-    /* background-color: #fcffee; */
-    background-color: #fcffee;
-    margin: 0px;
-    
 
-}
 .wrapper {
     
   padding-left: 1vw;
@@ -87,8 +81,8 @@ h1{
  line-height: 12vh;
  text-transform: uppercase;
 
- background:  #fcffee;
- mix-blend-mode: lighten;
+ 
+ 
 }
 
 .header-flex1 video{
@@ -257,7 +251,7 @@ padding: 20px;
    
     animation: fadeInDown; 
   animation-duration: 1.3s; 
-    color: #535353;
+  
   
     
 }

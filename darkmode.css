@@ -1,0 +1,145 @@
+ /* body{
+
+    background-color: #fcffee;
+    
+    
+
+} 
+
+h1 {
+    background-color: #fcffee;
+    mix-blend-mode: lighten;
+}
+
+.sub-text {
+    color: #535353;
+    
+} 
+
+body{
+    color: #ffffff;
+    background-color: #000000;
+    margin: 0px;
+    
+
+} 
+
+h1 {
+    background-color: #000000;
+    mix-blend-mode: multiply;
+   
+}
+
+
+.header-wrapper{
+    color: #ffffff;
+    
+   
+}
+
+.sub-text {
+    color: #ffffff;
+    
+} */
+  
+  .switch {
+    width: 55px;
+    position: absolute;
+    align-items: center;
+    top:3vh;
+    right: 1vw;
+    justify-content: space-between;
+  }
+  
+  .switch div {
+    position: relative;
+    display: block;
+    background: rgb(250, 165, 165);
+    width: 30px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .fa-adjust {
+    transform: rotate(180deg);
+  }
+  
+  .switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: rgb(250, 238, 183);
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+    transform: translateX(-3px);
+  }
+  
+  input:checked + .slider {
+    transform: translateX(12px);
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    background: #e5c687;
+    
+  }
+
+  :root {
+    --navHeight: 70px;
+    --cream: #fcffee;
+    --black: #000;
+    --white: #f8f8f8;
+    --lighten: lighten;
+    --mulitply: multiply;
+  }
+
+  .light-theme {
+    --themeDropDownBg: var(--goldCrayola);
+    --themeIconBorderColor: var(--sage);
+    --navBg: var(--sage);
+    --h1: var(--paleSpringBud);
+    --mainBg: var(--cream);
+    --fontColor: var(--black);
+    --MBM: var(--lighten);
+  }
+  
+  .dark-theme {
+    --MBM: var(--mulitply);
+    --mainBg: var(--black);
+    --fontColor: var(--white);
+  }
+
+  * {
+    color: var(--fontColor);
+    transition: background-color 1s ease, color 1s ease;
+    transition: background 0.4s ease, color 0.5s ease;
+  }
+  
+
+  
+  body {
+    background: var(--mainBg);
+    margin: 0px;
+   
+    overflow: hidden;
+  }
+
+  h1 {
+    background-color: var(--mainBg);
+    mix-blend-mode: var(--MBM);
+}
+
+/* .header-wrapper {
+    color: var(--fontColor);
+} */
+

@@ -12,12 +12,7 @@ html{
   -webkit-text-size-adjust: 100%;
 }
  
-body{
-  background-color: #fbfdef;
-  margin: 0px;
-  z-index: -10;
-  
-}
+
 
 #hr1 {
   width:7vw;
@@ -84,7 +79,7 @@ hr {
 }
 a {
 
-  color: inherit;
+
   text-decoration: none;
 }
 
@@ -131,7 +126,7 @@ float: left;
 
 
 header {
-  color:rgb(0, 0, 0);
+  
 }
 .scrolled {
   color:rgb(138, 46, 84);
@@ -243,7 +238,7 @@ img {
   animation-duration: 1.3s; 
 }
 .title {
-  color: #2e2e2e;
+ 
   font-size: 20rem;
   font-weight: 700;
 }
@@ -267,7 +262,7 @@ img {
 
 .category {
   font-size: 1rem;
-  color: #787878;
+
 }
 
 .img-content {

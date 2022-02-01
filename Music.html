@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./gallerystylemusic.css">
   <link rel="stylesheet" href="./musicvisualizer.css">
-
+ 
+  <link rel="stylesheet" href="/darkmode.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> 
 </head>
-<body>
+<body class="light-theme">
 <!-- partial:index.partial.html -->
  <div class="wrapper">
   <a href="index.html" ><img src="PBimages/favi.png" id="rect" class="rectangle"></img></a>
@@ -46,7 +47,13 @@
             PASTEL BLOOM 
         </div>
     </div>
-    
+    <label style="display: none" class="switch">
+      <i class="fas fa-adjust" ></i>
+      <div>
+        <input type="checkbox" id="inputSwitch" />
+        <span class="slider round"></span>
+      </div>
+    </label>
     <!-- <div id="sub-menu" >
       <a href="Music.html#anchormusic" ><div id="hr1" ></div></a>
     
@@ -178,6 +185,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script> 
 <script src="script.js"></script>
+<script src="darkmode.js"></script>
 <!-- <script  src="./MVscript.js"></script> -->
 </body>
 </html>

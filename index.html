@@ -5,14 +5,15 @@
         <meta charse="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="darkmode.css" />
         <link rel="icon" type="image/x-icon" src="/PBimages/favicon.ico">
         <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/Bloomboi/Bloomboi/main/PBimages/favicon.ico">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript> 
-       
+
+		
     </head>
     <!-- MAIN WEBSITE CONTENT -->
-    <body>
+    <body class="light-theme">
         <div class="wrapper">
             <!-- HEADER -->
             
@@ -34,13 +35,21 @@
                     <div class="Menu">
                         
                         <div class="nav-item"><a href="/Illustration">ILLUSTRATIONS</a></div>
-                        <div class="nav-item"><a href="/GraphicDesign">GRAPHIC DESIGN</a></div>
+                        <div class="nav-item"><a href="/GraphicDesign.html">GRAPHIC DESIGN</a></div>
                         <div class="nav-item"><a href="/animation">ANIMATION</a></div>
                         <div class="nav-item"><a href="/Music">MUSIC</a></div>
                         <div class="nav-item"><a href="/Blender">BLENDER</a></div>
                         <div class="nav-item"><a href="/About">ABOUT</a></div>
                     </div>
                 </nav>
+
+                <label class="switch">
+                    <i class="fas fa-adjust" ></i>
+                    <div>
+                      <input type="checkbox" id="inputSwitch" />
+                      <span class="slider round"></span>
+                    </div>
+                  </label>
             </header>
         
             <article style=" width: 100%;">
@@ -117,56 +126,8 @@
 <!--          
             <iframe src="test.html" ></iframe> -->
             <script src="script.js"></script> 
-            <script >
- let videoSource = new Array();
-videoSource[0] = '/PBimages/animation/video1.mp4';
-videoSource[1] = '/PBimages/animation/video2.mp4';
-let i = 0; // global
-const videoCount = videoSource.length;
-const element = document.getElementById("videoPlayer");
- 
-function videoPlay(videoNum) {
-    element.setAttribute("src", videoSource[videoNum]);
-    element.autoplay = true;
-    element.load();
-}
-
-function myHandler() {
-    i++;
-    if (i == videoCount) {
-        i = 0;
-        videoPlay(0);
-        
-    } else {
-        videoPlay(i);
-    }
-}
-
-document.getElementById('videoPlayer').addEventListener('ended', myHandler, false);
- 
-videoPlay(0); // load the first video
-ensureVideoPlays(); // play the video automatically
- 
-
-
- 
-function ensureVideoPlays() {
-    const video = document.getElementById('videoPlayer');
- 
-    if(!video) return;
-    
-    const promise = video.play();
-    if(promise !== undefined){
-        promise.then(() => {
-            // Autoplay started
-        }).catch(error => {
-            // Autoplay was prevented.
-            video.muted = true;
-            video.play();
-        });
-    }
-}
-                    </script>
+            <script src="Videoscript.js"></script>
+            <script src="darkmode.js"></script>
         </div>
     </body>
 </html>
