@@ -44,6 +44,13 @@ transform: translate(-50%, -50%);
   flex-wrap: wrap-reverse;
     
   }
+
+  @media screen and (max-width: 673px) {
+    .row {
+      width: 90%;
+    
+    }
+  }
  
 .column {
   
@@ -60,17 +67,18 @@ transform: translate(-50%, -50%);
 
 }
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   .column {
    z-index: -1;
   height:50%;
+  min-width: 300px;
   }
 }
 .image img{
   border-radius: 430px;
 
   
-  width: calc(20vh);
+  width: 200px;
  
   
 
@@ -79,7 +87,7 @@ transform: translate(-50%, -50%);
   box-shadow: 2px 2px 10px 1px #e97373;
  
 }
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   .image img {
    width:40vw;
    transform: translate(0%, 2vh);
@@ -172,9 +180,9 @@ p {
 }
 
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   .buttonflex {
-   flex: 100%;
+   flex: auto;
    
   }
 }
@@ -192,7 +200,7 @@ pointer-events: none;
 }
 
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   #websitedrawing {
     
     transform: translate(-56%, -46%) scale(0.25)  rotate(-10deg);
@@ -212,7 +220,7 @@ visibility: visible;
 }
 
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   #scratch {
     left:50%;
     top:50%;
@@ -232,7 +240,7 @@ visibility: visible;
 }
 
 
-@media screen and (max-width: 565px) {
+@media screen and (max-width: 673px) {
   #tag {
    z-index: 2;
     transform: translate(-40.5%, -47%) scale(0.3);
