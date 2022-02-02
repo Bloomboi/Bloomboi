@@ -79,6 +79,12 @@ transform: translate(-50%, -50%);
   box-shadow: 2px 2px 10px 1px #e97373;
  
 }
+@media screen and (max-width: 565px) {
+  .image img {
+   width:170px;
+   transform: translate(0%, 18%);
+  }
+}
 .imgcontainer {
   position: absolute;
   top:50%;
@@ -178,14 +184,15 @@ p {
 left: 50%;
 top: 50%;
 transform: translate(-58%, -49%) scale(0.4);
+transform: rotate(0deg);
 pointer-events: none;
 }
 
 
 @media screen and (max-width: 565px) {
   #websitedrawing {
-   
-    transform: translate(-60%, -46%) scale(0.3);
+    
+    transform: translate(-56%, -48%) scale(0.25)  rotate(-10deg);
   }
 }
 
