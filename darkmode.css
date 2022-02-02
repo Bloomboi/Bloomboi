@@ -85,17 +85,17 @@ h1 {
     transform: translateX(12px);
   }
 
-  main {
+  /* main {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3.5rem;
     background: #e5c687;
     
-  }
+  } */
 
   :root {
-    --navHeight: 70px;
+   
     --cream: #fcffee;
     --black: #000;
     --white: #f8f8f8;
