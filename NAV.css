@@ -195,7 +195,7 @@ pointer-events: none;
 @media screen and (max-width: 565px) {
   #websitedrawing {
     
-    transform: translate(-56%, -48%) scale(0.25)  rotate(-10deg);
+    transform: translate(-56%, -46%) scale(0.25)  rotate(-10deg);
   }
 }
 
