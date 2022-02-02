@@ -177,7 +177,7 @@ p {
   position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-58%, -49%) scale(0.5);
+transform: translate(-58%, -49%) scale(0.4);
 pointer-events: none;
 }
 
@@ -192,19 +192,20 @@ pointer-events: none;
 
 
 #scratch {
-  z-index: 1;
+  z-index: 5;
   position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-58%, -50.5%) scale(0.55);
+left:0%;
+top:98%;
+transform: translate(-25%, -25%) scale(0.55);
 pointer-events: none;
 }
 
 
 @media screen and (max-width: 565px) {
   #scratch {
-   
-    transform: translate(-53%, 50%) scale(0.3);
+    left:50%;
+    top:50%;
+    transform: translate(-50%, 35%) scale(0.4);
   }
 }
 
