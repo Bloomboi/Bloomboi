@@ -185,7 +185,7 @@ pointer-events: none;
 @media screen and (max-width: 565px) {
   #websitedrawing {
    
-    transform: translate(-58%, -49%) scale(0.3);
+    transform: translate(-60%, -46%) scale(0.3);
   }
 }
 
@@ -205,7 +205,7 @@ pointer-events: none;
   #scratch {
     left:50%;
     top:50%;
-    transform: translate(-50%, 35%) scale(0.4);
+    transform: translate(-50%, 25%) scale(0.3);
   }
 }
 
