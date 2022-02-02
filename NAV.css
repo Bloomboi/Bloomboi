@@ -186,8 +186,8 @@ p {
   position: absolute;
 left: 50%;
 top: 50%;
-transform: translate(-58%, -49%) scale(0.4);
-transform: rotate(0deg);
+transform: translate(-58%, -49%) scale(0.35) rotate(0deg);
+
 pointer-events: none;
 }
 
