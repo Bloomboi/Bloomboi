@@ -11,7 +11,7 @@ html{
     
   padding-left: 1vw;
   padding-right: 1vw;
-  padding-top: vh;
+  padding-top: 1vh;
   -webkit-font-smoothing: antialiased;
   width: 100vw;
   } 
@@ -196,6 +196,7 @@ a {
   font-weight: bold;
     /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
     font-family: 'Shrikhand', cursive;
+    /* font-family: 'KGHappySolid'; */
 
   
 }
