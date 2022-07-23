@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
-
-
+@font-face {
+  font-family: 'KGHAPPYSolid';
+  src: url('/KGHAPPYSolid.ttf'), format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 * {
     margin: 0;
@@ -152,6 +156,7 @@ padding-right: 10px;
 padding-bottom:10px;
     /* text-transform: upercase; */
     font-family: 'KGHappySolid';
+    src: url("KG");
  color: rgb(240, 116, 116);
  transition: ease-out 0.2s;
 white-space:nowrap;
