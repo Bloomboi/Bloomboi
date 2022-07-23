@@ -171,7 +171,7 @@ h3 {
     color: rgb(137, 53, 53);
    
     position: fixed;
-  filter: invert(1);
+  filter: invert(0);
   }
 
 .lightbox-target:target {
