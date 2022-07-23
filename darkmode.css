@@ -7,6 +7,15 @@
     right: 1vw;
     justify-content: space-between;
   }
+
+  @media screen and (max-width: 678px) {
+    .switch {
+      
+      top:1.25vh;
+      
+    }
+     
+   } 
   
   .switch div {
     position: relative;

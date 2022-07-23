@@ -94,7 +94,10 @@ a {
 
 header {
   /* font-family: 'IBM Plex Mono', monospace; */
-    font-family: 'KGHappySolid';
+  font-family: 'KGHAPPYSolid';
+  src: url('/KGHAPPYSolid.ttf'), format('truetype');
+  font-weight: normal;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   
   

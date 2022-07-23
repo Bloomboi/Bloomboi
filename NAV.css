@@ -160,8 +160,10 @@ padding-right: 10px;
     text-align: center;
 padding-bottom:10px;
     /* text-transform: upercase; */
-    font-family: 'KGHappySolid';
-    src: url("KG");
+    font-family: 'KGHAPPYSolid';
+  src: url('/KGHAPPYSolid.ttf'), format('truetype');
+  font-weight: normal;
+  font-style: normal;
  color: rgb(240, 116, 116);
  transition: ease-out 0.2s;
 white-space:nowrap;

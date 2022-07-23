@@ -311,3 +311,63 @@ h2 {
     font-style: oblique;
     font-weight: 600;
 }
+
+
+.lineholder {
+    position: relative;
+      z-index: 10;
+      width:98%;
+      height:30px;
+
+      
+      padding-bottom: 10vh;
+      margin-left: 0vw;
+      justify-content: center;
+      align-content: center;
+    }
+
+#line1 {
+    position: relative;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(69, 206, 240);
+      margin-bottom: 0vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1.5s; 
+    }
+    #line2 {
+      position: relative;
+      align-content: center;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(255, 219, 101);
+      margin-bottom: 0vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1.3s; 
+    }
+    
+    #line3 {
+      position: relative;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(255, 102, 102);
+      margin-bottom: 1vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1s; 
+    }
+    
+    @media screen and (max-width: 1050px) {
+     #line1, #line2, #line3{
+      width:96.5%;
+      }
+      
+    } 
