@@ -21,6 +21,11 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+#button1{
+
+align-content: center;
+}
+
 section {
   
   position: absolute;
@@ -128,7 +133,7 @@ transform: translate(-50%, -50%);
   width: 85%;
   height: auto;
   /* background-color: lightcyan; */
-
+justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap
@@ -261,8 +266,11 @@ filter: hue-rotate(2.5deg) brightness(2);
 #instatag {
   z-index: 4;
   position: fixed;
-  left: 35%;
+left: 0;
   top: 0%;
+margin-left: 40%;
+
   /* transform: translate(-50%, -50%); */
+  justify-content: center;
   
 }
