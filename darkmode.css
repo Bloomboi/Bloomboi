@@ -1,47 +1,4 @@
- /* body{
 
-    background-color: #fcffee;
-    
-    
-
-} 
-
-h1 {
-    background-color: #fcffee;
-    mix-blend-mode: lighten;
-}
-
-.sub-text {
-    color: #535353;
-    
-} 
-
-body{
-    color: #ffffff;
-    background-color: #000000;
-    margin: 0px;
-    
-
-} 
-
-h1 {
-    background-color: #000000;
-    mix-blend-mode: multiply;
-   
-}
-
-
-.header-wrapper{
-    color: #ffffff;
-    
-   
-}
-
-.sub-text {
-    color: #ffffff;
-    
-} */
-  
   .switch {
     width: 55px;
     position: absolute;
@@ -83,6 +40,7 @@ h1 {
   
   input:checked + .slider {
     transform: translateX(12px);
+
   }
 
   /* main {
@@ -101,6 +59,8 @@ h1 {
     --white: #f8f8f8;
     --lighten: lighten;
     --mulitply: multiply;
+    --invert: invert(1);
+    --invertoff: none(1);
   }
 
   .light-theme {
@@ -108,15 +68,17 @@ h1 {
     --themeIconBorderColor: var(--sage);
     --navBg: var(--sage);
     --h1: var(--paleSpringBud);
-    --mainBg: var(--cream);
+    --mainBg: var(--white);
     --fontColor: var(--black);
     --MBM: var(--lighten);
+    --Invert: var(--invert);
   }
   
   .dark-theme {
     --MBM: var(--mulitply);
     --mainBg: var(--black);
     --fontColor: var(--white);
+    --Invert: var(--invertoff);
   }
 
   * {
@@ -137,6 +99,25 @@ h1 {
   h1 {
     background-color: var(--mainBg);
     mix-blend-mode: var(--MBM);
+    
+}
+
+.titlebg {
+
+  background-color: var(--mainBg);
+  mix-blend-mode: var(--MBM);
+  
+}
+#titlecard {
+ filter: var(--Invert);
+ 
+ 
+}
+
+.abouttitle {
+  color: var(--fontColor);
+  visibility:visible;
+  
 }
 
 /* .header-wrapper {

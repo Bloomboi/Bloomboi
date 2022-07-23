@@ -1,0 +1,313 @@
+
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+html{
+  -webkit-text-size-adjust: 100%;
+}
+ 
+
+
+#hr1 {
+  width:7vw;
+    height:20px;
+    background:rgb(226, 83, 83);
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+#hr1 {
+  width:7vw;
+    height:20px;
+    background:rgb(226, 83, 83);
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+
+#hr2 {
+  width:7vw;
+    height:20px;
+    background:rgb(226, 176, 83);
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+
+#hr3 {
+  width:7vw;
+    height:20px;
+    background:rgb(25, 88, 90);
+    margin-left: 1vw;
+}
+
+#sub-menu {
+
+float: left;
+z-index: 10;
+padding-right: 1.5vw;;
+position: sticky;
+}
+
+#sub-menu hr{
+  width:4vw;
+  border-top: 10px solid #3d3d3d;
+}
+
+.wrapper {
+  
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  -webkit-font-smoothing: antialiased;
+  
+  } 
+
+
+hr {
+  width:70vw;
+  border-top: 1px;
+}
+
+.rectangle{
+  z-index: 3;
+  visibility: hidden;
+  position: fixed;
+  margin-left: 1.5vw;
+  width:110px;
+  height:130px;
+  /* background:blue;
+   */
+ 
+}
+a {
+
+
+  text-decoration: none;
+}
+
+header {
+  /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'KGHappySolid';
+  -webkit-font-smoothing: antialiased;
+  
+  
+}
+.header-wrapper {
+  display: flex;
+ flex: 30%;
+  line-height: 1;
+  z-index: 1;
+
+  padding-top: 0.1vw;
+  padding-bottom: 0.2vw;
+
+  pointer-events: auto;
+  padding-bottom: 1.5vh;
+} 
+
+.nav {
+max-height: 1em;
+padding-left:3vw;
+
+}
+
+.main-title{
+font-size: 40px;
+font-weight: bold;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'KGHappySolid';
+
+
+}
+.nav-item {
+animation:fadeInLeft;
+animation-duration: 1s; 
+padding-bottom: 10px;
+padding-right: 3vw;
+float: left;
+}
+
+
+
+
+.scrolled {
+  color:rgb(138, 46, 84);
+  animation:fadeOutLeft;
+  animation-duration: 1s; 
+}
+.fadein{
+  animation:fadeInLeft;
+  animation-duration: 1s; 
+}
+
+.fadeout{
+  animation:fadeOutLeft;
+  animation-duration: 1s; 
+}
+  
+  
+
+header {
+  font-family: 'IBM Plex Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  
+}
+
+
+
+.anchortitle {
+  font-family: 'IBM Plex Mono';
+  text-align: center;
+  
+  font-size: 30px;
+}
+
+.grid {
+  display: flex;
+   flex-direction: column;
+  flex-flow: row wrap;
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+.grid > [class*=column-] {
+  display: block;
+  
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+
+.img-container {
+  
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: contain;
+  
+}
+.img-container:hover .img-content-hover {
+  display: block;
+  
+}
+
+img {
+/*     
+  width: 20px;
+  height: 20px; */
+  /* -o-object-fit: cover;
+      object-fit: contain; */
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.refclass img:hover {
+  transform: scale(1.05);
+}
+
+.img-content-hover {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  font-weight: 400;
+  margin-top: 1.25rem;
+  margin-left: -2rem;
+}
+
+.gallery {
+  padding: 0 0 4rem 0;
+  animation: fadeInUp; 
+  animation-duration: 1.3s; 
+}
+.title {
+ 
+  font-size: 20rem;
+  font-weight: 700;
+}
+.img-container {
+  width: auto;
+  height: auto;
+  transform:scale(1lll);
+  cursor: pointer;
+  overflow: hidden;
+  
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  object-fit: contain;
+}
+
+.category {
+  font-size: 1rem;
+
+}
+
+.img-content {
+  display: none;
+}
+
+
+
+@supports (display: grid) {
+  .gallery .grid {
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  img:hover {
+    transform: none;
+  }
+
+  .img-container {
+    height: 100%;
+  }
+  .img-container:hover .img-content-hover {
+    display: none;
+  }
+
+  .img-content {
+    display: block;
+    padding: 1rem 0;
+  }
+}
+
+h2 {
+    font-family: ibm plex mono;
+    font-style: oblique;
+    font-weight: 600;
+}

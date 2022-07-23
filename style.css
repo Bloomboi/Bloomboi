@@ -98,7 +98,7 @@ position: relative;
 .header-flex1 {
   flex:80%;
   height: inherit;
- 
+  
 }
 .header-flex2 {
   flex:20%;
@@ -128,10 +128,9 @@ h1{
  
 
  text-transform: uppercase;
-
- 
- 
 }
+
+
 
 .header-flex1 video{
   
@@ -141,6 +140,7 @@ h1{
   width: 49.8vw;
   min-width: 600px;
   max-width: 80vw;
+  
   
 }
 @media screen and (max-width: 704px) {
@@ -338,3 +338,36 @@ padding: 20px;
     border: 0cm;
 
 } */
+.titlebg {
+  height: inherit;
+  object-fit: cover;
+  z-index: -3;
+  width: 49.8vw;
+  min-width: 600px;
+  max-width: 80vw;
+}
+
+#titlecard {
+  position:absolute;
+  
+  top: 0.6vh;
+
+  padding-right: 1vw;
+ 
+  margin: 0;
+}
+
+#titlecard {
+
+  padding-left: 5px;
+  z-index: 0;
+
+
+  width:44vw;
+ 
+  line-height: 10vh;
+ 
+  
+
+}
+

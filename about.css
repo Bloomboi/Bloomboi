@@ -1,7 +1,8 @@
 .abouttitle {
     font-size: 10vh;
-    font-family: IBM Plex Mono;
+    font-family: 'KGHappySolid';
     text-align: center;
+    
     
 }
 
@@ -23,6 +24,9 @@
     width: 100px;
     height: 100px;
 }
+.socials-flex {
+ flex: 16%;
+}
 .socials img{
     margin-left: 25px;
     margin-right: 25px;
@@ -39,6 +43,275 @@
 }
 
 .socialtitle {
-    font-family: IBM Plex Mono;
+  font-family: 'KGHappySolid';
     text-align: center;
 }
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+html{
+  -webkit-text-size-adjust: 100%;
+}
+ 
+
+
+#hr1 {
+  width:7vw;
+    height:20px;
+    background:rgb(226, 83, 83);
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+
+#hr2 {
+  width:7vw;
+    height:20px;
+    background:rgb(226, 176, 83);
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+
+#hr3 {
+  width:7vw;
+    height:20px;
+    background:rgb(25, 88, 90);
+    margin-left: 1vw;
+}
+
+#sub-menu {
+
+float: left;
+z-index: 10;
+padding-right: 1.5vw;;
+position: sticky;
+}
+
+#sub-menu hr{
+  width:4vw;
+  border-top: 10px solid #3d3d3d;
+}
+
+
+
+hr {
+  width:70vw;
+  border-top: 1px;
+}
+
+.rectangle{
+  z-index: 3;
+  /* visibility: hidden; */
+  position: fixed;
+  width:110px;
+  height:100px;
+  /* background:blue;
+   */
+ 
+}
+a {
+
+
+  text-decoration: none;
+}
+
+header {
+  /* font-family: 'IBM Plex Mono', monospace; */
+    font-family: 'KGHappySolid';
+  -webkit-font-smoothing: antialiased;
+  
+  
+}
+.header-wrapper {
+  display: flex;
+ flex: 30%;
+  line-height: 1;
+  z-index: 1;
+
+  padding-top: 0.1vw;
+  padding-bottom: 0.2vw;
+
+  pointer-events: auto;
+  padding-bottom: 1.5vh;
+} 
+
+
+.main-title{
+font-size: 13vh;
+font-weight: bold;
+  /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+  font-family: 'KGHappySolid';
+
+
+}
+
+
+
+.fadein{
+  animation:fadeInLeft;
+  animation-duration: 1s; 
+}
+
+.fadeout{
+  animation:fadeOutLeft;
+  animation-duration: 1s; 
+}
+  
+  
+
+header {
+  font-family: 'IBM Plex Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  
+}
+
+
+
+
+
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+.wrapper {
+  height: 100vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 45vh;
+
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+/* background-color: rgb(255, 126, 126); */
+overflow: hidden;
+} 
+
+
+.top-box{
+
+ position: relative;
+  width: 100%;
+  height:auto;
+  flex: auto;
+  display: flex;
+  
+}
+.box{
+  flex: 50%;
+ /* display: flex;
+ flex-direction: column;
+  height: fit-content; */
+
+
+}
+.under-box {
+
+     flex: auto;
+
+
+    height: fit-content; 
+    font-family: 'KGHappySolid';
+display: flex;
+}
+.social-under-box {
+  flex: auto;
+  height: fit-content; 
+  background-color: rgb(44, 147, 236);
+}
+#about-socials img{
+  filter: brightness(10);
+}
+
+
+
+.contact-form {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+ font-family: "roboto";
+ height:30vh;
+ background-color: rgb(255, 255, 255);
+}
+
+
+
+h2 {
+  /* font-family: 'KGHappySolid'; */
+  font-family: 'IBM Plex mono';
+}
+#about-title{
+  font-size: 5vw;
+  /* background-color: #FFE4C0; */
+
+}
+#about-sub-title{
+  font-size:2.5vh;
+  /* background-color: #FFAB76; */
+
+}
+
+#about-socials{
+  font-size:2.5vh;
+  /* background-color: #FFFDA2; */
+
+}
+
+#about-title-2{
+  font-size: 10vh;
+  /* background-color: #FFBBBB; */
+}
+
+/* #para-top-right{
+background-color:#BFFFF0;
+}
+
+#para-bot-left{
+  background-color:#FF6363;
+  
+  } */
+
+
+/* .vertical {
+  writing-mode:vertical-lr;
+  text-orientation: upright;
+ letter-spacing: -0.2vw;
+ max-height: 50vh;
+ line-height: 10vh;
+ font-size: 25pt;
+} */
