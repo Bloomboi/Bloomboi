@@ -142,9 +142,7 @@ float: left;
 
 
 
-header {
-  
-}
+
 .scrolled {
   color:rgb(138, 46, 84);
   animation:fadeOutLeft;
@@ -211,8 +209,8 @@ body {
 
 .img-container {
   
-  width: 100%;
-  height: 100%;
+  width: fit-content;
+  height: fit-content;
   cursor: pointer;
   overflow: hidden;
   object-fit: contain;
@@ -224,10 +222,11 @@ body {
 }
 
 img {
-  width: 100%;
-  height: 500px;
-  -o-object-fit: cover;
-      object-fit: contain;
+/*     
+  width: 20px;
+  height: 20px; */
+  /* -o-object-fit: cover;
+      object-fit: contain; */
   transform: scale(1);
   transition: all 0.3s ease-in-out;
 }
@@ -260,8 +259,9 @@ img {
   font-weight: 700;
 }
 .img-container {
-  width: 100%;
-  height: 500px;
+  width: auto;
+  height: auto;
+  transform:scale(1lll);
   cursor: pointer;
   overflow: hidden;
   
@@ -312,3 +312,72 @@ img {
   }
 }
 
+h2 {
+    font-family: ibm plex mono;
+    font-style: oblique;
+    font-weight: 600;
+}
+
+
+.lineholder {
+    position: relative;
+      z-index: 10;
+      width:98%;
+      height:30px;
+
+      
+      padding-bottom: 10vh;
+      margin-left: 0vw;
+      justify-content: center;
+      align-content: center;
+    }
+
+#line1 {
+    position: relative;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(69, 206, 240);
+      margin-bottom: 0vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1.5s; 
+    }
+    #line2 {
+      position: relative;
+      align-content: center;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(255, 219, 101);
+      margin-bottom: 0vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1.3s; 
+    }
+    
+    #line3 {
+      position: relative;
+      z-index: 10;
+      width:70%;
+      height:10px;
+      background:rgb(255, 102, 102);
+      margin-bottom: 1vh;
+      margin-left: auto;
+      margin-right: auto;
+      animation:fadeInLeft;
+      animation-duration: 1s; 
+    }
+    
+    @media screen and (max-width: 1050px) {
+     #line1, #line2, #line3{
+      width:96.5%;
+      }
+      
+    } 
+
+    .videostuff {
+            width: 100%;
+    }
