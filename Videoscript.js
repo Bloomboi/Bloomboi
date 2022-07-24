@@ -1,6 +1,8 @@
 let videoSource = new Array();
 videoSource[0] = '/PBimages/animation/video1.mp4';
 videoSource[1] = '/PBimages/animation/video2.mp4';
+videoSource[2] = '/PBimages/animation/MH test.mp4';
+videoSource[3] = '/PBimages/animation/spin succ.mp4';
 let i = 0; // global
 const videoCount = videoSource.length;
 const element = document.getElementById("videoPlayer");
